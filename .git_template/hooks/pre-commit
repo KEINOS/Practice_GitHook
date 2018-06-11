@@ -9,3 +9,5 @@ if [ -z "`git config --local user.email`" ]; then
   echo "fatal: user.email is not set locally"
   exit 1
 fi
+
+osascript -e 'tell app "System Events" to display dialog "Will commit"'
